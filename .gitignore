@@ -21,3 +21,8 @@ custom
 themes.json
 .DS_Store
 /.idea
+
+docker-compose.yml
+Dockerfile
+DOCKER.md
+
