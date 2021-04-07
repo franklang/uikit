@@ -1,6 +1,6 @@
 version: "3"
 services:
-  uikit_dev_env:
+  dev_env:
     build: .
     container_name: uikit
     ports:
