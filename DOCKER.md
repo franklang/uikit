@@ -5,7 +5,7 @@ docker build -t uikit .
 
 From the root of the uikit directory, run the service:
 ```
-docker-compose run --rm --service-ports uikit_dev_env
+docker-compose run --rm --service-ports dev_env
 ```
 
 In the container shell, execute the following command to run the Node server (if you prefer, use npm):
