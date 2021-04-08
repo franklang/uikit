@@ -6,12 +6,20 @@ export default {
     mixins: [Class],
 
     props: {
-        text: String
+        text: String,
+        clsWrapper: String
     },
 
     data: {
-        text: 'Hello world!'
+        text: 'Hello world!',
+        clsWrapper: '.uk-starter'
     },
+
+    // computed: {
+    //     text({text, clsWrapper}, $el) {
+    //         return $(clsWrapper.html(text), $el);
+    //     }
+    // },
 
     connected() {
         this.start();
@@ -26,6 +34,8 @@ export default {
         start() {
             this.stop();
             console.log(getText(this.text));
+            // html(el, digits.map(() => '<span></span>').join(''));
+            html($({clsWrapper}), getText(this.text));
         },
 
         stop() {
